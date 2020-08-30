@@ -15,12 +15,23 @@
 
 - 实现
 
+  [Linked List 示例代码](https://www.geeksforgeeks.org/implementing-a-linked-list-in-java-using-class/)
+
   ```java
-   public class ListNode {
-       int val;
-       ListNode next;
-       ListNode(int x) { val = x; }
-   }
+  class LinkedList { 
+      Node head; // head of list 
+    
+      /* Linked list Node*/
+      class Node { 
+          int data; 
+          Node next; 
+    
+          // Constructor to create a new node 
+          // Next is by default initialized 
+          // as null 
+          Node(int d) { data = d; } 
+      } 
+  }
   ```
 
 - 时间复杂度
@@ -42,10 +53,10 @@
 
 #### 跳表 Skip List
 
-- 思想：升维
+- 思想：升维 + 空间换时间
 - 要求元素必须是有序的
 - 时间复杂度
-  - 插入删除随机访问 O(logn)
+  - 插入删除访问 O(logn)
 
 ## 栈、队列、优先队列、双端队列
 
